@@ -110,7 +110,6 @@ function closeLightbox() {
   const img   = document.getElementById('lightbox-img');
   const video = document.getElementById('lightbox-video');
   img.src = '';
-  video.pause();
   video.src = '';
   img.style.display   = 'block';
   video.style.display = 'none';
@@ -126,9 +125,8 @@ function openVideo(src, title) {
   video.style.display = 'block';
   controls.style.display = 'none';
 
-  video.src = src;
-  video.load();
-  video.play();
+  // Use Google Drive preview URL
+  video.src = 'https://drive.google.com/file/d/1BXOv78t9BfZElqpWqg57ODOe003gv1Vm/preview';
 
   document.getElementById('lightbox-caption').textContent = title;
   document.getElementById('lightbox').classList.add('active');
