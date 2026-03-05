@@ -125,7 +125,6 @@ function openVideo(src, title) {
   video.style.display = 'block';
   controls.style.display = 'none';
 
-  // Use Google Drive preview URL
   video.src = 'https://drive.google.com/file/d/1BXOv78t9BfZElqpWqg57ODOe003gv1Vm/preview';
 
   document.getElementById('lightbox-caption').textContent = title;
