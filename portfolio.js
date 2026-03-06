@@ -125,7 +125,7 @@ function openVideo(src, title) {
   video.style.display = 'block';
   controls.style.display = 'none';
 
-  video.src = 'https://drive.google.com/file/d/1BXOv78t9BfZElqpWqg57ODOe003gv1Vm/preview';
+  video.src = 'pitching.mp4';
 
   document.getElementById('lightbox-caption').textContent = title;
   document.getElementById('lightbox').classList.add('active');
